@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+
 function Login() {
   return (
     <Container>
       <Wrapper>
         <LogoOne src="/images/cta-logo-one.svg" />
-        <SignUp>GET ALL THREE</SignUp>
+        <SignUp>GET ALL THERE</SignUp>
         <Description>
-          {" "}
-          bfdbfddfgbhgdhgfgfdhhfgbtbtrbhrfbrrbhrfbgtrhbtgbfr
+          An unprecedented collection of the world's most beloved movies and TV
+          series streaming now on Disney+.
         </Description>
-        <LogoTwo src="/images/cta-logo-two.svg" />
+        <LogoTwo src="/images/cta-logo-two.png" />
       </Wrapper>
     </Container>
   );
@@ -21,8 +22,8 @@ export default Login;
 const Container = styled.div`
   min-height: calc(100vh - 70px);
   position: relative;
-  align-itens: top;
   display: flex;
+  align-items: top;
   justify-content: center;
   &:before {
     background-image: url("/images/login-background.jpg");
@@ -48,22 +49,22 @@ const Wrapper = styled.div`
   text-align: center;
   align-items: center;
 `;
+
 const LogoOne = styled.img``;
 const LogoTwo = styled.img``;
 const SignUp = styled.a`
   width: 100%;
   background: #0063e5;
-  font-weight: bold;
+  font-weigth: bold;
   padding: 17px 0;
   border-radius: 4px;
   font-size: 18px;
   cursor: pointer;
   transition: all 250ms;
   letter-spacing: 1.5px;
-  margin-top: 10px;
   margin: 10px 0;
   &:hover {
-    background: #483ee;
+    background: #0483ee;
   }
 `;
 const Description = styled.p`
